@@ -26,17 +26,29 @@ public class Deck
 
     public Card drawNext()
     {
-        return _cards[_cardCount];
+        int tempCount = _cardCount;
         _cardCount += 1;
+        return _shuffledCards[tempCount];
+        
     }
 
     public void shuffleDeck()
     {
         for (int i = 0; i < _cards.Capacity; i++)
         {
-            int num = rand.Next(0,_cards.Capacity);
-            _shuffledCards.Add(_cards[num]);
-            _cards.RemoveAt(num);
+            // int num = rand.Next(_cards.Capacity);
+            // _shuffledCards.Add(_cards[num]);
+            // _cards.RemoveAt(num);
+
+            _shuffledCards = _cards.OrderBy(a => rand.Next()).ToList();
+        }
+    }
+
+    public void DisplayDeck()
+    {
+        foreach (Card card in _shuffledCards)
+        {
+            card.DisplayCard();
         }
     }
 }

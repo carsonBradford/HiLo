@@ -9,9 +9,9 @@ namespace HiLo
     {
         public Deck _deck = new Deck();
         bool isPlaying = true;
-        int score = 300;
-        public Card _currentCard = new Card(_deck.drawNext());
-       public  Card _nextCard = _deck.drawNext();
+        int _score = 300;
+        public Card _currentCard;
+       public  Card _nextCard;
 
        public string _guess;
         /// <summary>
@@ -19,6 +19,9 @@ namespace HiLo
         /// </summary>
         public Director()
         {
+            _deck.shuffleDeck();
+            _currentCard = _deck.drawNext();
+            _nextCard = _deck.drawNext();
         }
 
         /// <summary>
@@ -39,11 +42,10 @@ namespace HiLo
         /// </summary>
         public void GetInputs()
         {
-            Console.Write($"The card is : " + _currentCard._face);
-            Console.Write("Higher or lower? [h/l] ");
+            Console.WriteLine($"The card is : {_currentCard._face}");
+            Console.WriteLine("Higher or lower? [h/l] ");
             _guess = Console.ReadLine();
-            Console.Write($"The card was : " + _nextCard._face);
-            
+            Console.WriteLine($"The next card was : {_nextCard._face}");
         }
 
         /// <summary>
@@ -58,11 +60,19 @@ namespace HiLo
 
             if ((( _guess == "l") && (_currentCard._value > _nextCard._value)) || (( _guess == "h") && (_currentCard._value < _nextCard._value)))
             {
-                score += 100;
+                _score += 100;
             } 
             else
             {
-                score -= 75;
+                _score -= 75;
+            }
+            Console.WriteLine($"Your score is: {_score}");
+            if (_score < 1)
+            {
+                Console.WriteLine("Game over.");
+                Console.WriteLine("Thanks for playing!");
+                isPlaying = false;
+                return;
             }
             Console.WriteLine("Play again? [y/n] ");
             string ans = Console.ReadLine();

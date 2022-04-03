@@ -27,9 +27,13 @@ public class Card
         {
             _face = "King";
         }
+        else if (value == 1)
+        {
+            _face = "Ace";
+        }
         else
         {
-            _face = "${value}";
+            _face = _value.ToString();
         }
     }
 

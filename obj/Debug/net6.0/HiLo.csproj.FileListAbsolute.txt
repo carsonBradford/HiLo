@@ -1,0 +1,15 @@
+C:\Users\jonca\OneDrive\Desktop\CSE210\c#\HiLo\bin\Debug\net6.0\HiLo.exe
+C:\Users\jonca\OneDrive\Desktop\CSE210\c#\HiLo\bin\Debug\net6.0\HiLo.deps.json
+C:\Users\jonca\OneDrive\Desktop\CSE210\c#\HiLo\bin\Debug\net6.0\HiLo.runtimeconfig.json
+C:\Users\jonca\OneDrive\Desktop\CSE210\c#\HiLo\bin\Debug\net6.0\HiLo.dll
+C:\Users\jonca\OneDrive\Desktop\CSE210\c#\HiLo\bin\Debug\net6.0\ref\HiLo.dll
+C:\Users\jonca\OneDrive\Desktop\CSE210\c#\HiLo\bin\Debug\net6.0\HiLo.pdb
+C:\Users\jonca\OneDrive\Desktop\CSE210\c#\HiLo\obj\Debug\net6.0\HiLo.csproj.AssemblyReference.cache
+C:\Users\jonca\OneDrive\Desktop\CSE210\c#\HiLo\obj\Debug\net6.0\HiLo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jonca\OneDrive\Desktop\CSE210\c#\HiLo\obj\Debug\net6.0\HiLo.AssemblyInfoInputs.cache
+C:\Users\jonca\OneDrive\Desktop\CSE210\c#\HiLo\obj\Debug\net6.0\HiLo.AssemblyInfo.cs
+C:\Users\jonca\OneDrive\Desktop\CSE210\c#\HiLo\obj\Debug\net6.0\HiLo.csproj.CoreCompileInputs.cache
+C:\Users\jonca\OneDrive\Desktop\CSE210\c#\HiLo\obj\Debug\net6.0\HiLo.dll
+C:\Users\jonca\OneDrive\Desktop\CSE210\c#\HiLo\obj\Debug\net6.0\ref\HiLo.dll
+C:\Users\jonca\OneDrive\Desktop\CSE210\c#\HiLo\obj\Debug\net6.0\HiLo.pdb
+C:\Users\jonca\OneDrive\Desktop\CSE210\c#\HiLo\obj\Debug\net6.0\HiLo.genruntimeconfig.cache
