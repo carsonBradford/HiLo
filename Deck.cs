@@ -14,8 +14,8 @@ public class Deck
     public Random rand = new Random();
     
     /// <summary>
-        /// Constructs a new instance of Deck
-        /// </summary>
+    /// Constructs a new instance of Deck
+    /// </summary>
     public Deck()
     {
        for (int i = 1; i < 14; i++)
@@ -24,6 +24,9 @@ public class Deck
        }
     }   
 
+    /// <summary>
+    /// Returns the next card from the deck
+    /// </summary>
     public Card drawNext()
     {
         int tempCount = _cardCount;
@@ -32,18 +35,20 @@ public class Deck
         
     }
 
+    /// <summary>
+    /// Randomizes the deck
+    /// </summary>
     public void shuffleDeck()
     {
         for (int i = 0; i < _cards.Capacity; i++)
         {
-            // int num = rand.Next(_cards.Capacity);
-            // _shuffledCards.Add(_cards[num]);
-            // _cards.RemoveAt(num);
-
             _shuffledCards = _cards.OrderBy(a => rand.Next()).ToList();
         }
     }
 
+    /// <summary>
+    /// Displays the whole deck.
+    /// </summary>
     public void DisplayDeck()
     {
         foreach (Card card in _shuffledCards)

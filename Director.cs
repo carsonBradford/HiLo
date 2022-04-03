@@ -12,8 +12,8 @@ namespace HiLo
         int _score = 300;
         public Card _currentCard;
        public  Card _nextCard;
-
        public string _guess;
+       
         /// <summary>
         /// Constructs a new instance of Director.
         /// </summary>
